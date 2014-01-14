@@ -1,0 +1,720 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Bootstrap Elements - SB Admin
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // Add custom CSS here
+    link(href='css/sb-admin.css', rel='stylesheet')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+  body
+    #wrapper
+      // Sidebar
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') SB Admin
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.side-nav
+            li
+              a(href='index.html')
+                i.fa.fa-dashboard
+                | Dashboard
+            li
+              a(href='charts.html')
+                i.fa.fa-bar-chart-o
+                | Charts
+            li
+              a(href='tables.html')
+                i.fa.fa-table
+                | Tables
+            li
+              a(href='forms.html')
+                i.fa.fa-edit
+                | Forms
+            li
+              a(href='typography.html')
+                i.fa.fa-font
+                | Typography
+            li.active
+              a(href='bootstrap-elements.html')
+                i.fa.fa-desktop
+                | Bootstrap Elements
+            li
+              a(href='bootstrap-grid.html')
+                i.fa.fa-wrench
+                | Bootstrap Grid
+            li
+              a(href='blank-page.html')
+                i.fa.fa-file
+                | Blank Page
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-caret-square-o-down
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Dropdown Item
+                li
+                  a(href='#') Another Item
+                li
+                  a(href='#') Third Item
+                li
+                  a(href='#') Last Item
+          ul.nav.navbar-nav.navbar-right.navbar-user
+            li.dropdown.messages-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-envelope
+                | Messages
+                span.badge 7
+                b.caret
+              ul.dropdown-menu
+                li.dropdown-header 7 New Messages
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li
+                  a(href='#')
+                    | View Inbox
+                    span.badge 7
+            li.dropdown.alerts-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-bell
+                | Alerts
+                span.badge 3
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    | Default
+                    span.label.label-default Default
+                li
+                  a(href='#')
+                    | Primary
+                    span.label.label-primary Primary
+                li
+                  a(href='#')
+                    | Success
+                    span.label.label-success Success
+                li
+                  a(href='#')
+                    | Info
+                    span.label.label-info Info
+                li
+                  a(href='#')
+                    | Warning
+                    span.label.label-warning Warning
+                li
+                  a(href='#')
+                    | Danger
+                    span.label.label-danger Danger
+                li.divider
+                li
+                  a(href='#') View All
+            li.dropdown.user-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                | John Smith
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    i.fa.fa-user
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-envelope
+                    | Inbox
+                    span.badge 7
+                li
+                  a(href='#')
+                    i.fa.fa-gear
+                    | Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-power-off
+                    | Log Out
+        // /.navbar-collapse
+      #page-wrapper
+        .row
+          .col-lg-12
+            h1
+              | Bootstrap Elements
+              small Built-In Bootstrap Elements
+            ol.breadcrumb
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  | Dashboard
+              li.active
+                i.fa.fa-desktop
+                | Bootstrap Elements
+            .alert.alert-info.alert-dismissable
+              button.close(type='button', data-dismiss='alert', aria-hidden='true') &times;
+              | Start Bootstrap recommends that you have an in-depth understanding of the Bootstrap framework before working with this template&period; Visit
+              a.alert-link(href='http://getbootstrap.com/', target='_blank') http&colon;&sol;&sol;getbootstrap&period;com&sol;
+              | for complete documentation&period;
+        // /.row
+        .row
+          .col-lg-12
+            h1#buttons.page-header Buttons
+        // /.row
+        .row
+          .col-lg-6
+            p
+              button.btn.btn-default(type='button') Default
+              button.btn.btn-primary(type='button') Primary
+              button.btn.btn-success(type='button') Success
+              button.btn.btn-info(type='button') Info
+              button.btn.btn-warning(type='button') Warning
+              button.btn.btn-danger(type='button') Danger
+              button.btn.btn-link(type='button') Link
+            p
+              button.btn.btn-default.disabled(type='button') Default
+              button.btn.btn-primary.disabled(type='button') Primary
+              button.btn.btn-success.disabled(type='button') Success
+              button.btn.btn-info.disabled(type='button') Info
+              button.btn.btn-warning.disabled(type='button') Warning
+              button.btn.btn-danger.disabled(type='button') Danger
+              button.btn.btn-link.disabled(type='button') Link
+            p
+              .btn-group
+                button.btn.btn-default(type='button') Default
+                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+              // /btn-group
+              .btn-group
+                button.btn.btn-primary(type='button') Primary
+                button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+              // /btn-group
+              .btn-group
+                button.btn.btn-success(type='button') Success
+                button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+              // /btn-group
+              .btn-group
+                button.btn.btn-info(type='button') Info
+                button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+              // /btn-group
+              .btn-group
+                button.btn.btn-warning(type='button') Warning
+                button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown')
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+              // /btn-group
+            p
+              button.btn.btn-primary.btn-lg(type='button') Large button
+              button.btn.btn-primary(type='button') Default button
+              button.btn.btn-primary.btn-sm(type='button') Small button
+              button.btn.btn-primary.btn-xs(type='button') Mini button
+          .col-lg-6
+            p
+              button.btn.btn-default.btn-lg.btn-block(type='button') Block level button
+            p
+              .btn-group.btn-group-justified
+                a.btn.btn-default(href='#') Left
+                a.btn.btn-default(href='#') Right
+                a.btn.btn-default(href='#') Middle
+            p
+              .btn-toolbar
+                .btn-group
+                  button.btn.btn-default(type='button') 1
+                  button.btn.btn-default(type='button') 2
+                  button.btn.btn-default(type='button') 3
+                  button.btn.btn-default(type='button') 4
+                .btn-group
+                  button.btn.btn-default(type='button') 5
+                  button.btn.btn-default(type='button') 6
+                  button.btn.btn-default(type='button') 7
+                .btn-group
+                  button.btn.btn-default(type='button') 8
+                  .btn-group
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      | Dropdown
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Dropdown link
+                      li
+                        a(href='#') Dropdown link
+                      li
+                        a(href='#') Dropdown link
+            p
+              .btn-group-vertical
+                button.btn.btn-default(type='button') Button
+                button.btn.btn-default(type='button') Button
+                button.btn.btn-default(type='button') Button
+                button.btn.btn-default(type='button') Button
+        // /.row
+        .row
+          .col-lg-12
+            .page-header
+              h1#navs Navs
+        // /.row
+        .row
+          .col-lg-4
+            h2#nav-tabs Tabs
+            .bs-example
+              ul.nav.nav-tabs(style='margin-bottom: 15px;')
+                li.active
+                  a(href='#home', data-toggle='tab') Home
+                li
+                  a(href='#profile', data-toggle='tab') Profile
+                li.disabled
+                  a Disabled
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#dropdown1', data-toggle='tab') Action
+                    li.divider
+                    li
+                      a(href='#dropdown2', data-toggle='tab') Another action
+              #myTabContent.tab-content
+                #home.tab-pane.fade.active.in
+                  p
+                    | Raw denim you probably haven&apos;t heard of them jean shorts Austin&period; Nesciunt tofu stumptown aliqua&comma; retro synth master cleanse&period; Mustache cliche tempor&comma; williamsburg carles vegan helvetica&period; Reprehenderit butcher retro keffiyeh dreamcatcher synth&period; Cosby sweater eu banh mi&comma; qui irure terry richardson ex squid&period; Aliquip placeat salvia cillum iphone&period; Seitan aliquip quis cardigan american apparel&comma; butcher voluptate nisi qui&period;
+                #profile.tab-pane.fade
+                  p
+                    | Food truck fixie locavore&comma; accusamus mcsweeney&apos;s marfa nulla single-origin coffee squid&period; Exercitation &plus;1 labore velit&comma; blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee&period; Qui photo booth letterpress&comma; commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR&period; Homo nostrud organic&comma; assumenda labore aesthetic magna delectus mollit&period;
+                #dropdown1.tab-pane.fade
+                  p
+                    | Etsy mixtape wayfarers&comma; ethical wes anderson tofu before they sold out mcsweeney&apos;s organic lomo retro fanny pack lo-fi farm-to-table readymade&period; Messenger bag gentrify pitchfork tattooed craft beer&comma; iphone skateboard locavore carles etsy salvia banksy hoodie helvetica&period; DIY synth PBR banksy irony&period; Leggings gentrify squid 8-bit cred pitchfork&period;
+                #dropdown2.tab-pane.fade
+                  p
+                    | Trust fund seitan letterpress&comma; keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater&period; Fanny pack portland seitan DIY&comma; art party locavore wolf cliche high life echo park Austin&period; Cred vinyl keffiyeh DIY salvia PBR&comma; banh mi before they sold out farm-to-table VHS viral locavore cosby sweater&period;
+          .col-lg-4
+            h2#nav-pills Pills
+            .bs-example
+              ul.nav.nav-pills
+                li.active
+                  a(href='#') Home
+                li
+                  a(href='#') Profile
+                li.disabled
+                  a(href='#') Disabled
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+            br
+            .bs-example
+              ul.nav.nav-pills.nav-stacked(style='max-width: 300px;')
+                li.active
+                  a(href='#') Home
+                li
+                  a(href='#') Profile
+                li.disabled
+                  a(href='#') Disabled
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li
+                      a(href='#') Separated link
+          .col-lg-4
+            h2#nav-breadcrumbs Breadcrumbs
+            .bs-example
+              ul.breadcrumb
+                li.active Home
+              ul.breadcrumb
+                li
+                  a(href='#') Home
+                li.active Library
+              ul.breadcrumb(style='margin-bottom: 5px;')
+                li
+                  a(href='#') Home
+                li
+                  a(href='#') Library
+                li.active Data
+        // /.row
+        .row
+          .col-lg-4
+            h2#pagination Pagination
+            .bs-example
+              ul.pagination
+                li.disabled
+                  a(href='#') &laquo;
+                li.active
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') 4
+                li
+                  a(href='#') 5
+                li
+                  a(href='#') &raquo;
+              ul.pagination.pagination-lg
+                li.disabled
+                  a(href='#') &laquo;
+                li.active
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') &raquo;
+              ul.pagination.pagination-sm
+                li.disabled
+                  a(href='#') &laquo;
+                li.active
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') 4
+                li
+                  a(href='#') 5
+                li
+                  a(href='#') &raquo;
+          .col-lg-4
+            h2#pager Pager
+            .bs-example
+              ul.pager
+                li
+                  a(href='#') Previous
+                li
+                  a(href='#') Next
+            .bs-example
+              ul.pager
+                li.previous.disabled
+                  a(href='#') &slarr; Older
+                li.next
+                  a(href='#') Newer &srarr;
+        // /.row
+        .row
+          .col-lg-12
+            .page-header
+              h1#indicators Indicators
+        // /.row
+        .row
+          .col-lg-12
+            h2 Alerts
+            .bs-example
+              .alert.alert-dismissable.alert-warning
+                button.close(type='button', data-dismiss='alert') &times;
+                h4 Warning&excl;
+                p
+                  | Best check yo self&comma; you&apos;re not looking too good&period; Nulla vitae elit libero&comma; a pharetra augue&period; Praesent commodo cursus magna&comma;
+                  a.alert-link(href='#') vel scelerisque nisl consectetur et
+                  | &period;
+        // /.row
+        .row
+          .col-lg-4
+            .alert.alert-dismissable.alert-danger
+              button.close(type='button', data-dismiss='alert') &times;
+              strong Oh snap&excl;
+              a.alert-link(href='#') Change a few things up
+              | and try submitting again&period;
+          .col-lg-4
+            .alert.alert-dismissable.alert-success
+              button.close(type='button', data-dismiss='alert') &times;
+              strong Well done&excl;
+              | You successfully read
+              a.alert-link(href='#') this important alert message
+              | &period;
+          .col-lg-4
+            .alert.alert-dismissable.alert-info
+              button.close(type='button', data-dismiss='alert') &times;
+              strong Heads up&excl;
+              | This
+              a.alert-link(href='#') alert needs your attention
+              | &comma; but it&apos;s not super important&period;
+        // /.row
+        .row
+          .col-lg-4
+            h2 Labels
+            .bs-example(style='margin-bottom: 40px;')
+              span.label.label-default Default
+              span.label.label-primary Primary
+              span.label.label-success Success
+              span.label.label-warning Warning
+              span.label.label-danger Danger
+              span.label.label-info Info
+          .col-lg-4
+            h2 Badges
+            .bs-example
+              ul.nav.nav-pills
+                li.active
+                  a(href='#')
+                    | Home
+                    span.badge 42
+                li
+                  a(href='#')
+                    | Profile
+                    span.badge
+                li
+                  a(href='#')
+                    | Messages
+                    span.badge 3
+        // /.row
+        .row
+          .col-lg-12
+            .page-header
+              h1#progress Progress bars
+            h3#progress-basic Basic
+            .bs-example
+              .progress
+                .progress-bar(style='width: 60%;')
+            h3#progress-alternatives Contextual alternatives
+            .bs-example
+              .progress(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-info(style='width: 20%')
+              .progress(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-success(style='width: 40%')
+              .progress(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-warning(style='width: 60%')
+              .progress
+                .progress-bar.progress-bar-danger(style='width: 80%')
+            h3#progress-striped Striped
+            .bs-example
+              .progress.progress-striped(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-info(style='width: 20%')
+              .progress.progress-striped(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-success(style='width: 40%')
+              .progress.progress-striped(style='margin-bottom: 9px;')
+                .progress-bar.progress-bar-warning(style='width: 60%')
+              .progress.progress-striped
+                .progress-bar.progress-bar-danger(style='width: 80%')
+            h3#progress-animated Animated
+            .bs-example
+              .progress.progress-striped.active
+                .progress-bar(style='width: 45%')
+            h3#progress-stacked Stacked
+            .bs-example
+              .progress
+                .progress-bar.progress-bar-success(style='width: 35%')
+                .progress-bar.progress-bar-warning(style='width: 20%')
+                .progress-bar.progress-bar-danger(style='width: 10%')
+        // /.row
+        .row
+          .col-lg-12
+            .page-header
+              h1#container Containers
+            .bs-example
+              .jumbotron
+                h1 Jumbotron
+                p
+                  | This is a simple hero unit&comma; a simple jumbotron-style component for calling extra attention to featured content or information&period;
+                p
+                  a.btn.btn-primary.btn-lg Learn more
+        // /.row
+        .row
+          .col-lg-12
+            h2 List groups
+        // /.row
+        .row
+          .col-lg-4
+            .bs-example
+              ul.list-group
+                li.list-group-item
+                  span.badge 14
+                  | Cras justo odio
+                li.list-group-item
+                  span.badge 2
+                  | Dapibus ac facilisis in
+                li.list-group-item
+                  span.badge 1
+                  | Morbi leo risus
+          .col-lg-4
+            .bs-example
+              .list-group
+                a.list-group-item.active(href='#')
+                  | Cras justo odio
+                a.list-group-item(href='#')
+                  | Dapibus ac facilisis in
+                a.list-group-item(href='#')
+                  | Morbi leo risus
+          .col-lg-4
+            .bs-example
+              .list-group
+                a.list-group-item(href='#')
+                  h4.list-group-item-heading List group item heading
+                  p.list-group-item-text
+                    | Donec id elit non mi porta gravida at eget metus&period; Maecenas sed diam eget risus varius blandit&period;
+                a.list-group-item(href='#')
+                  h4.list-group-item-heading List group item heading
+                  p.list-group-item-text
+                    | Donec id elit non mi porta gravida at eget metus&period; Maecenas sed diam eget risus varius blandit&period;
+        // /.row
+        .row
+          .col-lg-12
+            h2 Panels
+        // /.row
+        .row
+          .col-lg-4
+            .panel.panel-default
+              .panel-body
+                | Basic panel
+            .panel.panel-default
+              .panel-heading Panel heading
+              .panel-body
+                | Panel content
+            .panel.panel-default
+              .panel-body
+                | Panel content
+              .panel-footer Panel footer
+          .col-lg-4
+            .panel.panel-primary
+              .panel-heading
+                h3.panel-title Panel primary
+              .panel-body
+                | Panel content
+            .panel.panel-success
+              .panel-heading
+                h3.panel-title Panel success
+              .panel-body
+                | Panel content
+            .panel.panel-warning
+              .panel-heading
+                h3.panel-title Panel warning
+              .panel-body
+                | Panel content
+          .col-lg-4
+            .panel.panel-danger
+              .panel-heading
+                h3.panel-title Panel danger
+              .panel-body
+                | Panel content
+            .panel.panel-info
+              .panel-heading
+                h3.panel-title Panel info
+              .panel-body
+                | Panel content
+        // /.row
+        .row
+          .col-lg-12
+            h2 Wells
+        // /.row
+        .row
+          .col-lg-4
+            .well
+              | Look&comma; I&apos;m in a well&excl;
+          .col-lg-4
+            .well.well-sm
+              | Look&comma; I&apos;m in a small well&excl;
+          .col-lg-4
+            .well.well-lg
+              | Look&comma; I&apos;m in a large well&excl;
+        // /.row
+      // /#page-wrapper
+    // /#wrapper
+    // JavaScript
+    script(src='js/jquery-1.10.2.js')
+    script(src='js/bootstrap.js')

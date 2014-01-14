@@ -1,0 +1,486 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Tables - SB Admin
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // Add custom CSS here
+    link(href='css/sb-admin.css', rel='stylesheet')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+  body
+    #wrapper
+      // Sidebar
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') SB Admin
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.side-nav
+            li
+              a(href='index.html')
+                i.fa.fa-dashboard
+                | Dashboard
+            li
+              a(href='charts.html')
+                i.fa.fa-bar-chart-o
+                | Charts
+            li.active
+              a(href='tables.html')
+                i.fa.fa-table
+                | Tables
+            li
+              a(href='forms.html')
+                i.fa.fa-edit
+                | Forms
+            li
+              a(href='typography.html')
+                i.fa.fa-font
+                | Typography
+            li
+              a(href='bootstrap-elements.html')
+                i.fa.fa-desktop
+                | Bootstrap Elements
+            li
+              a(href='bootstrap-grid.html')
+                i.fa.fa-wrench
+                | Bootstrap Grid
+            li
+              a(href='blank-page.html')
+                i.fa.fa-file
+                | Blank Page
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-caret-square-o-down
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Dropdown Item
+                li
+                  a(href='#') Another Item
+                li
+                  a(href='#') Third Item
+                li
+                  a(href='#') Last Item
+          ul.nav.navbar-nav.navbar-right.navbar-user
+            li.dropdown.messages-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-envelope
+                | Messages
+                span.badge 7
+                b.caret
+              ul.dropdown-menu
+                li.dropdown-header 7 New Messages
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li
+                  a(href='#')
+                    | View Inbox
+                    span.badge 7
+            li.dropdown.alerts-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-bell
+                | Alerts
+                span.badge 3
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    | Default
+                    span.label.label-default Default
+                li
+                  a(href='#')
+                    | Primary
+                    span.label.label-primary Primary
+                li
+                  a(href='#')
+                    | Success
+                    span.label.label-success Success
+                li
+                  a(href='#')
+                    | Info
+                    span.label.label-info Info
+                li
+                  a(href='#')
+                    | Warning
+                    span.label.label-warning Warning
+                li
+                  a(href='#')
+                    | Danger
+                    span.label.label-danger Danger
+                li.divider
+                li
+                  a(href='#') View All
+            li.dropdown.user-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                | John Smith
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    i.fa.fa-user
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-envelope
+                    | Inbox
+                    span.badge 7
+                li
+                  a(href='#')
+                    i.fa.fa-gear
+                    | Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-power-off
+                    | Log Out
+        // /.navbar-collapse
+      #page-wrapper
+        .row
+          .col-lg-12
+            h1
+              | Tables
+              small Sort Your Data
+            ol.breadcrumb
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  | Dashboard
+              li.active
+                i.fa.fa-table
+                | Tables
+            .alert.alert-info.alert-dismissable
+              button.close(type='button', data-dismiss='alert', aria-hidden='true') &times;
+              | We&apos;re using
+              a.alert-link(href='http://tablesorter.com/docs/') Tablesorter 2&period;0
+              | for the sort function on the tables&period; Read the documentation for more customization options or feel free to use something else&excl;
+        // /.row
+        .row
+          .col-lg-6
+            h2 Bordered Table
+            .table-responsive
+              table.table.table-bordered.table-hover.tablesorter
+                thead
+                  tr
+                    th
+                      | Page
+                      i.fa.fa-sort
+                    th
+                      | Visits
+                      i.fa.fa-sort
+                    th
+                      | &percnt; New Visits
+                      i.fa.fa-sort
+                    th
+                      | Revenue
+                      i.fa.fa-sort
+                tbody
+                  tr
+                    td &sol;index&period;html
+                    td 1265
+                    td 32&period;3&percnt;
+                    td &dollar;321&period;33
+                  tr
+                    td &sol;about&period;html
+                    td 261
+                    td 33&period;3&percnt;
+                    td &dollar;234&period;12
+                  tr
+                    td &sol;sales&period;html
+                    td 665
+                    td 21&period;3&percnt;
+                    td &dollar;16&period;34
+                  tr
+                    td &sol;blog&period;html
+                    td 9516
+                    td 89&period;3&percnt;
+                    td &dollar;1644&period;43
+                  tr
+                    td &sol;404&period;html
+                    td 23
+                    td 34&period;3&percnt;
+                    td &dollar;23&period;52
+                  tr
+                    td &sol;services&period;html
+                    td 421
+                    td 60&period;3&percnt;
+                    td &dollar;724&period;32
+                  tr
+                    td &sol;blog&sol;post&period;html
+                    td 1233
+                    td 93&period;2&percnt;
+                    td &dollar;126&period;34
+          .col-lg-6
+            h2 Bordered with Striped Rows
+            .table-responsive
+              table.table.table-bordered.table-hover.table-striped.tablesorter
+                thead
+                  tr
+                    th
+                      | Page
+                      i.fa.fa-sort
+                    th
+                      | Visits
+                      i.fa.fa-sort
+                    th
+                      | &percnt; New Visits
+                      i.fa.fa-sort
+                    th
+                      | Revenue
+                      i.fa.fa-sort
+                tbody
+                  tr
+                    td &sol;index&period;html
+                    td 1265
+                    td 32&period;3&percnt;
+                    td &dollar;321&period;33
+                  tr
+                    td &sol;about&period;html
+                    td 261
+                    td 33&period;3&percnt;
+                    td &dollar;234&period;12
+                  tr
+                    td &sol;sales&period;html
+                    td 665
+                    td 21&period;3&percnt;
+                    td &dollar;16&period;34
+                  tr
+                    td &sol;blog&period;html
+                    td 9516
+                    td 89&period;3&percnt;
+                    td &dollar;1644&period;43
+                  tr
+                    td &sol;404&period;html
+                    td 23
+                    td 34&period;3&percnt;
+                    td &dollar;23&period;52
+                  tr
+                    td &sol;services&period;html
+                    td 421
+                    td 60&period;3&percnt;
+                    td &dollar;724&period;32
+                  tr
+                    td &sol;blog&sol;post&period;html
+                    td 1233
+                    td 93&period;2&percnt;
+                    td &dollar;126&period;34
+        // /.row
+        .row
+          .col-lg-6
+            h2 Basic Table
+            .table-responsive
+              table.table.table-hover.tablesorter
+                thead
+                  tr
+                    th
+                      | Page
+                      i.fa.fa-sort
+                    th
+                      | Visits
+                      i.fa.fa-sort
+                    th
+                      | &percnt; New Visits
+                      i.fa.fa-sort
+                    th
+                      | Revenue
+                      i.fa.fa-sort
+                tbody
+                  tr
+                    td &sol;index&period;html
+                    td 1265
+                    td 32&period;3&percnt;
+                    td &dollar;321&period;33
+                  tr
+                    td &sol;about&period;html
+                    td 261
+                    td 33&period;3&percnt;
+                    td &dollar;234&period;12
+                  tr
+                    td &sol;sales&period;html
+                    td 665
+                    td 21&period;3&percnt;
+                    td &dollar;16&period;34
+                  tr
+                    td &sol;blog&period;html
+                    td 9516
+                    td 89&period;3&percnt;
+                    td &dollar;1644&period;43
+                  tr
+                    td &sol;404&period;html
+                    td 23
+                    td 34&period;3&percnt;
+                    td &dollar;23&period;52
+                  tr
+                    td &sol;services&period;html
+                    td 421
+                    td 60&period;3&percnt;
+                    td &dollar;724&period;32
+                  tr
+                    td &sol;blog&sol;post&period;html
+                    td 1233
+                    td 93&period;2&percnt;
+                    td &dollar;126&period;34
+          .col-lg-6
+            h2 Striped Rows
+            .table-responsive
+              table.table.table-hover.table-striped.tablesorter
+                thead
+                  tr
+                    th
+                      | Page
+                      i.fa.fa-sort
+                    th
+                      | Visits
+                      i.fa.fa-sort
+                    th
+                      | &percnt; New Visits
+                      i.fa.fa-sort
+                    th
+                      | Revenue
+                      i.fa.fa-sort
+                tbody
+                  tr
+                    td &sol;index&period;html
+                    td 1265
+                    td 32&period;3&percnt;
+                    td &dollar;321&period;33
+                  tr
+                    td &sol;about&period;html
+                    td 261
+                    td 33&period;3&percnt;
+                    td &dollar;234&period;12
+                  tr
+                    td &sol;sales&period;html
+                    td 665
+                    td 21&period;3&percnt;
+                    td &dollar;16&period;34
+                  tr
+                    td &sol;blog&period;html
+                    td 9516
+                    td 89&period;3&percnt;
+                    td &dollar;1644&period;43
+                  tr
+                    td &sol;404&period;html
+                    td 23
+                    td 34&period;3&percnt;
+                    td &dollar;23&period;52
+                  tr
+                    td &sol;services&period;html
+                    td 421
+                    td 60&period;3&percnt;
+                    td &dollar;724&period;32
+                  tr
+                    td &sol;blog&sol;post&period;html
+                    td 1233
+                    td 93&period;2&percnt;
+                    td &dollar;126&period;34
+        // /.row
+        .row
+          .col-lg-6
+            h2 Contextual Classes
+            .table-responsive
+              table.table.table-bordered.table-hover.table-striped.tablesorter
+                thead
+                  tr
+                    th
+                      | Page
+                      i.fa.fa-sort
+                    th
+                      | Visits
+                      i.fa.fa-sort
+                    th
+                      | &percnt; New Visits
+                      i.fa.fa-sort
+                    th
+                      | Revenue
+                      i.fa.fa-sort
+                tbody
+                  tr.active
+                    td &sol;index&period;html
+                    td 1265
+                    td 32&period;3&percnt;
+                    td &dollar;321&period;33
+                  tr.success
+                    td &sol;about&period;html
+                    td 261
+                    td 33&period;3&percnt;
+                    td &dollar;234&period;12
+                  tr.warning
+                    td &sol;sales&period;html
+                    td 665
+                    td 21&period;3&percnt;
+                    td &dollar;16&period;34
+                  tr.danger
+                    td &sol;blog&period;html
+                    td 9516
+                    td 89&period;3&percnt;
+                    td &dollar;1644&period;43
+                  tr
+                    td &sol;404&period;html
+                    td 23
+                    td 34&period;3&percnt;
+                    td &dollar;23&period;52
+                  tr
+                    td &sol;services&period;html
+                    td 421
+                    td 60&period;3&percnt;
+                    td &dollar;724&period;32
+                  tr
+                    td &sol;blog&sol;post&period;html
+                    td 1233
+                    td 93&period;2&percnt;
+                    td &dollar;126&period;34
+          .col-lg-6
+            h2 Bootstrap Docs
+            p
+              | For complete documentation&comma; please visit
+              a(target='_blank', href='http://getbootstrap.com/css/#tables') Bootstrap&apos;s Tables Documentation
+              | &period;
+        // /.row
+      // /#page-wrapper
+    // /#wrapper
+    // JavaScript
+    script(src='js/jquery-1.10.2.js')
+    script(src='js/bootstrap.js')
+    // Page Specific Plugins
+    script(src='js/tablesorter/jquery.tablesorter.js')
+    script(src='js/tablesorter/tables.js')

@@ -1,0 +1,341 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Forms - SB Admin
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // Add custom CSS here
+    link(href='css/sb-admin.css', rel='stylesheet')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+  body
+    #wrapper
+      // Sidebar
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') SB Admin
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.side-nav
+            li
+              a(href='index.html')
+                i.fa.fa-dashboard
+                | Dashboard
+            li
+              a(href='charts.html')
+                i.fa.fa-bar-chart-o
+                | Charts
+            li
+              a(href='tables.html')
+                i.fa.fa-table
+                | Tables
+            li.active
+              a(href='forms.html')
+                i.fa.fa-edit
+                | Forms
+            li
+              a(href='typography.html')
+                i.fa.fa-font
+                | Typography
+            li
+              a(href='bootstrap-elements.html')
+                i.fa.fa-desktop
+                | Bootstrap Elements
+            li
+              a(href='bootstrap-grid.html')
+                i.fa.fa-wrench
+                | Bootstrap Grid
+            li
+              a(href='blank-page.html')
+                i.fa.fa-file
+                | Blank Page
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-caret-square-o-down
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Dropdown Item
+                li
+                  a(href='#') Another Item
+                li
+                  a(href='#') Third Item
+                li
+                  a(href='#') Last Item
+          ul.nav.navbar-nav.navbar-right.navbar-user
+            li.dropdown.messages-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-envelope
+                | Messages
+                span.badge 7
+                b.caret
+              ul.dropdown-menu
+                li.dropdown-header 7 New Messages
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li
+                  a(href='#')
+                    | View Inbox
+                    span.badge 7
+            li.dropdown.alerts-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-bell
+                | Alerts
+                span.badge 3
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    | Default
+                    span.label.label-default Default
+                li
+                  a(href='#')
+                    | Primary
+                    span.label.label-primary Primary
+                li
+                  a(href='#')
+                    | Success
+                    span.label.label-success Success
+                li
+                  a(href='#')
+                    | Info
+                    span.label.label-info Info
+                li
+                  a(href='#')
+                    | Warning
+                    span.label.label-warning Warning
+                li
+                  a(href='#')
+                    | Danger
+                    span.label.label-danger Danger
+                li.divider
+                li
+                  a(href='#') View All
+            li.dropdown.user-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                | John Smith
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    i.fa.fa-user
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-envelope
+                    | Inbox
+                    span.badge 7
+                li
+                  a(href='#')
+                    i.fa.fa-gear
+                    | Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-power-off
+                    | Log Out
+        // /.navbar-collapse
+      #page-wrapper
+        .row
+          .col-lg-12
+            h1
+              | Forms
+              small Enter Your Data
+            ol.breadcrumb
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  | Dashboard
+              li.active
+                i.fa.fa-edit
+                | Forms
+            .alert.alert-info.alert-dismissable
+              button.close(type='button', data-dismiss='alert', aria-hidden='true') &times;
+              | Visit
+              a.alert-link(target='_blank', href='http://getbootstrap.com/css/#forms') Bootstrap&apos;s Form Documentation
+              | for more information&period;
+        // /.row
+        .row
+          .col-lg-6
+            form(role='form')
+              .form-group
+                label Text Input
+                input.form-control(type='text')
+                p.help-block Example block-level help text here&period;
+              .form-group
+                label Text Input with Placeholder
+                input.form-control(type='text', placeholder='Enter text')
+              .form-group
+                label Static Control
+                p.form-control-static email&commat;example&period;com
+              .form-group
+                label File input
+                input(type='file')
+              .form-group
+                label Text area
+                textarea.form-control(rows='3')
+              .form-group
+                label Checkboxes
+                .checkbox
+                  label
+                    input(type='checkbox', value='')
+                    | Checkbox  1
+                .checkbox
+                  label
+                    input(type='checkbox', value='')
+                    | Checkbox  2
+                .checkbox
+                  label
+                    input(type='checkbox', value='')
+                    | Checkbox  3
+              .form-group
+                label Inline Checkboxes
+                label.checkbox-inline
+                  input(type='checkbox')
+                  | 1
+                label.checkbox-inline
+                  input(type='checkbox')
+                  | 2
+                label.checkbox-inline
+                  input(type='checkbox')
+                  | 3
+              .form-group
+                label Radio Buttons
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                    | Radio  1
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                    | Radio  2
+                .radio
+                  label
+                    input#optionsRadios3(type='radio', name='optionsRadios', value='option3')
+                    | Radio  3
+              .form-group
+                label Inline Radio Buttons
+                label.radio-inline
+                  input#optionsRadiosInline1(type='radio', name='optionsRadiosInline', value='option1', checked='')
+                  | 1
+                label.radio-inline
+                  input#optionsRadiosInline2(type='radio', name='optionsRadiosInline', value='option2')
+                  | 2
+                label.radio-inline
+                  input#optionsRadiosInline3(type='radio', name='optionsRadiosInline', value='option3')
+                  | 3
+              .form-group
+                label Selects
+                select.form-control
+                  option 1
+                  option 2
+                  option 3
+                  option 4
+                  option 5
+              .form-group
+                label Multiple Selects
+                select.form-control(multiple='')
+                  option 1
+                  option 2
+                  option 3
+                  option 4
+                  option 5
+              button.btn.btn-default(type='submit') Submit Button
+              button.btn.btn-default(type='reset') Reset Button
+          .col-lg-6
+            h1 Disabled Form States
+            form(role='form')
+              fieldset(disabled='')
+                .form-group
+                  label(for='disabledSelect') Disabled input
+                  input#disabledInput.form-control(type='text', placeholder='Disabled input', disabled='')
+                .form-group
+                  label(for='disabledSelect') Disabled select menu
+                  select#disabledSelect.form-control
+                    option Disabled select
+                .checkbox
+                  label
+                    input(type='checkbox')
+                    | Disabled Checkbox
+                button.btn.btn-primary(type='submit') Disabled Button
+            h1 Form Validation
+            form(role='form')
+              .form-group.has-success
+                label.control-label(for='inputSuccess') Input with success
+                input#inputSuccess.form-control(type='text')
+              .form-group.has-warning
+                label.control-label(for='inputWarning') Input with warning
+                input#inputWarning.form-control(type='text')
+              .form-group.has-error
+                label.control-label(for='inputError') Input with error
+                input#inputError.form-control(type='text')
+            h1 Input Groups
+            form(role='form')
+              .form-group.input-group
+                span.input-group-addon &commat;
+                input.form-control(type='text', placeholder='Username')
+              .form-group.input-group
+                input.form-control(type='text')
+                span.input-group-addon &period;00
+              .form-group.input-group
+                span.input-group-addon
+                  i.fa.fa-eur
+                input.form-control(type='text', placeholder='Font Awesome Icon')
+              .form-group.input-group
+                span.input-group-addon &dollar;
+                input.form-control(type='text')
+                span.input-group-addon &period;00
+              .form-group.input-group
+                input.form-control(type='text')
+                span.input-group-btn
+                  button.btn.btn-default(type='button')
+                    i.fa.fa-search
+            p
+              | For complete documentation&comma; please visit
+              a(href='http://getbootstrap.com/css/#forms') Bootstrap&apos;s Form Documentation
+              | &period;
+        // /.row
+      // /#page-wrapper
+    // /#wrapper
+    // JavaScript
+    script(src='js/jquery-1.10.2.js')
+    script(src='js/bootstrap.js')

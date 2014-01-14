@@ -1,0 +1,341 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Typography - SB Admin
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // Add custom CSS here
+    link(href='css/sb-admin.css', rel='stylesheet')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+  body
+    #wrapper
+      // Sidebar
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') SB Admin
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.side-nav
+            li
+              a(href='index.html')
+                i.fa.fa-dashboard
+                | Dashboard
+            li
+              a(href='charts.html')
+                i.fa.fa-bar-chart-o
+                | Charts
+            li
+              a(href='tables.html')
+                i.fa.fa-table
+                | Tables
+            li
+              a(href='forms.html')
+                i.fa.fa-edit
+                | Forms
+            li.active
+              a(href='typography.html')
+                i.fa.fa-font
+                | Typography
+            li
+              a(href='bootstrap-elements.html')
+                i.fa.fa-desktop
+                | Bootstrap Elements
+            li
+              a(href='bootstrap-grid.html')
+                i.fa.fa-wrench
+                | Bootstrap Grid
+            li
+              a(href='blank-page.html')
+                i.fa.fa-file
+                | Blank Page
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-caret-square-o-down
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Dropdown Item
+                li
+                  a(href='#') Another Item
+                li
+                  a(href='#') Third Item
+                li
+                  a(href='#') Last Item
+          ul.nav.navbar-nav.navbar-right.navbar-user
+            li.dropdown.messages-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-envelope
+                | Messages
+                span.badge 7
+                b.caret
+              ul.dropdown-menu
+                li.dropdown-header 7 New Messages
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li.message-preview
+                  a(href='#')
+                    span.avatar
+                      img(src='http://placehold.it/50x50')
+                    span.name John Smith&colon;
+                    span.message Hey there&comma; I wanted to ask you something&period;&period;&period;
+                    span.time
+                      i.fa.fa-clock-o
+                      | 4&colon;34 PM
+                li.divider
+                li
+                  a(href='#')
+                    | View Inbox
+                    span.badge 7
+            li.dropdown.alerts-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-bell
+                | Alerts
+                span.badge 3
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    | Default
+                    span.label.label-default Default
+                li
+                  a(href='#')
+                    | Primary
+                    span.label.label-primary Primary
+                li
+                  a(href='#')
+                    | Success
+                    span.label.label-success Success
+                li
+                  a(href='#')
+                    | Info
+                    span.label.label-info Info
+                li
+                  a(href='#')
+                    | Warning
+                    span.label.label-warning Warning
+                li
+                  a(href='#')
+                    | Danger
+                    span.label.label-danger Danger
+                li.divider
+                li
+                  a(href='#') View All
+            li.dropdown.user-dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user
+                | John Smith
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#')
+                    i.fa.fa-user
+                    | Profile
+                li
+                  a(href='#')
+                    i.fa.fa-envelope
+                    | Inbox
+                    span.badge 7
+                li
+                  a(href='#')
+                    i.fa.fa-gear
+                    | Settings
+                li.divider
+                li
+                  a(href='#')
+                    i.fa.fa-power-off
+                    | Log Out
+        // /.navbar-collapse
+      #page-wrapper
+        .row
+          .col-lg-12
+            h1
+              | Typograhy
+              small Text and Headers
+            ol.breadcrumb
+              li
+                a(href='index.html')
+                  i.fa.fa-dashboard
+                  | Dashboard
+              li.active
+                i.fa.fa-font
+                | Typograhy
+            .alert.alert-info.alert-dismissable
+              button.close(type='button', data-dismiss='alert', aria-hidden='true') &times;
+              | Visit
+              a.alert-link(target='_blank', href='http://getbootstrap.com/css/#type') Bootstrap&apos;s Typography Documentation
+              | for more information&period;
+          .col-lg-4
+            h1
+              | Heading 1
+              small Sub-heading
+            h2
+              | Heading 2
+              small Sub-heading
+            h3
+              | Heading 3
+              small Sub-heading
+            h4
+              | Heading 4
+              small Sub-heading
+            h5
+              | Heading 5
+              small Sub-heading
+            h6
+              | Heading 6
+              small Sub-heading
+          .col-lg-4
+            h1 Example Body Copy Text
+            p.lead This is an example of lead body copy&period;
+            p
+              | This is an example of standard paragraph text&period; This is an example of
+              a(href='#') link anchor text
+              | within body copy&period;
+            p
+              small This is an example of small&comma; fine print text&period;
+            p
+              strong This is an example of strong&comma; bold text&period;
+            p
+              em This is an example of emphasized&comma; italic text&period;
+            h1 Alignment Classes
+            p.text-left Left aligned text&period;
+            p.text-center Center aligned text&period;
+            p.text-right Right aligned text&period;
+          .col-lg-4
+            h1 Emphasis Classes
+            p.text-muted This is an example of muted text&period;
+            p.text-primary This is an example of primary text&period;
+            p.text-success This is an example of success text&period;
+            p.text-info This is an example of info text&period;
+            p.text-warning This is an example of warning text&period;
+            p.text-danger This is an example of danger text&period;
+        // /.row
+        .row
+          .col-lg-4
+            h1 Abbreviations
+            p
+              | The abbreviation of the word attribute is
+              abbr(title='attribute') attr
+              | &period;
+            p
+              abbr.initialism(title='HyperText Markup Language') HTML
+              | is an abbreviation for a programming language&period;
+            h1 Addresses
+            address
+              strong Twitter&comma; Inc&period;
+              br
+              | 795 Folsom Ave&comma; Suite 600
+              br
+              | San Francisco&comma; CA 94107
+              br
+              abbr(title='Phone') P&colon;
+              | &lpar;123&rpar; 456-7890
+            address
+              strong Full Name
+              br
+              a(href='mailto:#') first&period;last&commat;example&period;com
+          .col-lg-4
+            h1 Blockquotes
+            h2 Default Blockquote
+            blockquote
+              p
+                | Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit&period; Integer posuere erat a ante&period;
+            h2 Blockquote with Citation
+            blockquote
+              p
+                | Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit&period; Integer posuere erat a ante&period;
+              small
+                | Someone famous in
+                cite(title='Source Title') Source Title
+            h2 Right Aligned Blockquote
+            blockquote.pull-right
+              p
+                | Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit&period; Integer posuere erat a ante&period;
+          .col-lg-4
+            h1 Lists
+            h2 Unordered List
+            ul
+              li List Item
+              li List Item
+              ul
+                li List Item
+                li List Item
+                li List Item
+              li List Item
+            h2 Ordered List
+            ol
+              li List Item
+              li List Item
+              li List Item
+            h2 Unstyled List
+            ul.list-unstyled
+              li List Item
+              li List Item
+              li List Item
+            h2 Inline List
+            ul.list-inline
+              li List Item
+              li List Item
+              li List Item
+        // /.row
+        .row
+          .col-lg-4
+            h1 Descriptions
+            dl
+              dt Standard Description List
+              dd Description Text
+              dt Description List Title
+              dd Description List Text
+            dl.dl-horizontal
+              dt Horizontal Description List
+              dd Description Text
+              dt Description List Title
+              dd Description List Text
+          .col-lg-4
+            h1 Code
+            p
+              | This is an example of an inline code element within body copy&period; Wrap inline code within a
+              code &lt;code&gt;&period;&period;&period;&lt;&sol;code&gt;
+              | tag&period;
+            pre.
+              \nThis is an example of preformatted text.              
+          .col-lg-4
+            h1 Bootstrap Docs
+            p
+              | For complete documentation&comma; please visit
+              a(target='_blank', href='http://getbootstrap.com/css/#type') Bootstrap&apos;s Typograhpy Documentation
+              | &period;
+        // /.row
+      // /#page-wrapper
+    // /#wrapper
+    // JavaScript
+    script(src='js/jquery-1.10.2.js')
+    script(src='js/bootstrap.js')
